@@ -1,0 +1,8 @@
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\bin\Debug\4-Formatação de saidas.exe.config
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\bin\Debug\4-Formatação de saidas.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\bin\Debug\4-Formatação de saidas.pdb
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\obj\Debug\4-Formatação de saidas.csproj.AssemblyReference.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\obj\Debug\4-Formatação de saidas.csproj.SuggestedBindingRedirects.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\obj\Debug\4-Formatação de saidas.csproj.CoreCompileInputs.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\obj\Debug\4-Formatação de saidas.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\4-Formatação de saidas\4-Formatação de saidas\obj\Debug\4-Formatação de saidas.pdb
