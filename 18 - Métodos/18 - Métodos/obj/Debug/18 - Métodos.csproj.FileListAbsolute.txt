@@ -1,0 +1,8 @@
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\bin\Debug\18 - Métodos.exe.config
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\bin\Debug\18 - Métodos.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\bin\Debug\18 - Métodos.pdb
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\obj\Debug\18 - Métodos.csproj.AssemblyReference.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\obj\Debug\18 - Métodos.csproj.SuggestedBindingRedirects.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\obj\Debug\18 - Métodos.csproj.CoreCompileInputs.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\obj\Debug\18 - Métodos.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\18 - Métodos\18 - Métodos\obj\Debug\18 - Métodos.pdb

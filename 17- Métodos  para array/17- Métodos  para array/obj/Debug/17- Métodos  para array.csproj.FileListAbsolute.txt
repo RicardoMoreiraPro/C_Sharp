@@ -1,0 +1,8 @@
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\bin\Debug\17- Métodos  para array.exe.config
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\bin\Debug\17- Métodos  para array.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\bin\Debug\17- Métodos  para array.pdb
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\obj\Debug\17- Métodos  para array.csproj.AssemblyReference.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\obj\Debug\17- Métodos  para array.csproj.SuggestedBindingRedirects.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\obj\Debug\17- Métodos  para array.csproj.CoreCompileInputs.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\obj\Debug\17- Métodos  para array.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\17- Métodos  para array\17- Métodos  para array\obj\Debug\17- Métodos  para array.pdb

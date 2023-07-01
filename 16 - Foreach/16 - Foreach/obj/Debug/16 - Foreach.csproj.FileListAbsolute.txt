@@ -1,0 +1,8 @@
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\bin\Debug\16 - Foreach.exe.config
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\bin\Debug\16 - Foreach.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\bin\Debug\16 - Foreach.pdb
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\obj\Debug\16 - Foreach.csproj.AssemblyReference.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\obj\Debug\16 - Foreach.csproj.SuggestedBindingRedirects.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\obj\Debug\16 - Foreach.csproj.CoreCompileInputs.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\obj\Debug\16 - Foreach.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\16 - Foreach\16 - Foreach\obj\Debug\16 - Foreach.pdb
