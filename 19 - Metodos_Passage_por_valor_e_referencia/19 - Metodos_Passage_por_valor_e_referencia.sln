@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19 - Metodos_Passage_por_valor_e_referencia", "19 - Metodos_Passage_por_valor_e_referencia\19 - Metodos_Passage_por_valor_e_referencia.csproj", "{66413E0D-1633-4422-AF41-900CAF5B40CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66413E0D-1633-4422-AF41-900CAF5B40CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66413E0D-1633-4422-AF41-900CAF5B40CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66413E0D-1633-4422-AF41-900CAF5B40CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66413E0D-1633-4422-AF41-900CAF5B40CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDA5584A-1D58-4569-AFAA-24D49439764D}
+	EndGlobalSection
+EndGlobal
