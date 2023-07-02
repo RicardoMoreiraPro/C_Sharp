@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27-Pulic_vs_private", "27-Pulic_vs_private\27-Pulic_vs_private.csproj", "{209461E0-134B-4C2D-B16A-1B69AF4AF016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{209461E0-134B-4C2D-B16A-1B69AF4AF016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209461E0-134B-4C2D-B16A-1B69AF4AF016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209461E0-134B-4C2D-B16A-1B69AF4AF016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209461E0-134B-4C2D-B16A-1B69AF4AF016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CC99319-962C-47FE-BA67-B8CA0EDE3090}
+	EndGlobalSection
+EndGlobal
