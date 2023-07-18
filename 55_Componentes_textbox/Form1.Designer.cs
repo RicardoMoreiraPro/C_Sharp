@@ -137,14 +137,14 @@
             // checkboxToolStripMenuItem
             // 
             this.checkboxToolStripMenuItem.Name = "checkboxToolStripMenuItem";
-            this.checkboxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkboxToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.checkboxToolStripMenuItem.Text = "Checkbox";
             this.checkboxToolStripMenuItem.Click += new System.EventHandler(this.checkboxToolStripMenuItem_Click);
             // 
             // checkedListBoxToolStripMenuItem
             // 
             this.checkedListBoxToolStripMenuItem.Name = "checkedListBoxToolStripMenuItem";
-            this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.checkedListBoxToolStripMenuItem.Text = "CheckedListBox";
             this.checkedListBoxToolStripMenuItem.Click += new System.EventHandler(this.checkedListBoxToolStripMenuItem_Click);
             // 
