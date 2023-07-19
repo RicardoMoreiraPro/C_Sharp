@@ -13,3 +13,6 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textb
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_CheckBox.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_CheckedListBox.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_filhoCheckBox.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_ComboBox.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_DateTimePicker.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_linkLabel.resources

@@ -39,6 +39,9 @@
             this.componentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkedListBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fComboBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataTimePickerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linkLabelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,7 +132,10 @@
             // 
             this.componentesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checkboxToolStripMenuItem,
-            this.checkedListBoxToolStripMenuItem});
+            this.checkedListBoxToolStripMenuItem,
+            this.fComboBoxToolStripMenuItem,
+            this.dataTimePickerToolStripMenuItem,
+            this.linkLabelToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -137,16 +143,37 @@
             // checkboxToolStripMenuItem
             // 
             this.checkboxToolStripMenuItem.Name = "checkboxToolStripMenuItem";
-            this.checkboxToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.checkboxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkboxToolStripMenuItem.Text = "Checkbox";
             this.checkboxToolStripMenuItem.Click += new System.EventHandler(this.checkboxToolStripMenuItem_Click);
             // 
             // checkedListBoxToolStripMenuItem
             // 
             this.checkedListBoxToolStripMenuItem.Name = "checkedListBoxToolStripMenuItem";
-            this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkedListBoxToolStripMenuItem.Text = "CheckedListBox";
             this.checkedListBoxToolStripMenuItem.Click += new System.EventHandler(this.checkedListBoxToolStripMenuItem_Click);
+            // 
+            // fComboBoxToolStripMenuItem
+            // 
+            this.fComboBoxToolStripMenuItem.Name = "fComboBoxToolStripMenuItem";
+            this.fComboBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fComboBoxToolStripMenuItem.Text = "ComboBox";
+            this.fComboBoxToolStripMenuItem.Click += new System.EventHandler(this.ComboBoxToolStripMenuItem_Click);
+            // 
+            // dataTimePickerToolStripMenuItem
+            // 
+            this.dataTimePickerToolStripMenuItem.Name = "dataTimePickerToolStripMenuItem";
+            this.dataTimePickerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dataTimePickerToolStripMenuItem.Text = "DateTimePicker";
+            this.dataTimePickerToolStripMenuItem.Click += new System.EventHandler(this.dataTimePickerToolStripMenuItem_Click);
+            // 
+            // linkLabelToolStripMenuItem
+            // 
+            this.linkLabelToolStripMenuItem.Name = "linkLabelToolStripMenuItem";
+            this.linkLabelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.linkLabelToolStripMenuItem.Text = "Label/LinkLabel";
+            this.linkLabelToolStripMenuItem.Click += new System.EventHandler(this.linkLabelToolStripMenuItem_Click);
             // 
             // F_principal
             // 
@@ -188,6 +215,9 @@
         private System.Windows.Forms.ToolStripMenuItem componentesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkboxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkedListBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fComboBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataTimePickerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linkLabelToolStripMenuItem;
     }
 }
 

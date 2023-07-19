@@ -61,5 +61,23 @@ namespace _55_Componentes_textbox
             F_CheckedListBox f_CheckedListBox = new F_CheckedListBox();
             f_CheckedListBox.ShowDialog();
         }
+
+        private void ComboBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_ComboBox f_ComboBox = new F_ComboBox();
+            f_ComboBox.ShowDialog();
+        }
+
+        private void dataTimePickerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_DateTimePicker f_DateTimePicker = new F_DateTimePicker();
+            f_DateTimePicker.ShowDialog();
+        }
+
+        private void linkLabelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_linkLabel f_LinkLabel = new F_linkLabel();
+            f_LinkLabel.ShowDialog();
+        }
     }
 }

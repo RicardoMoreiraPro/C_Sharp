@@ -64,11 +64,29 @@
     <Compile Include="F_CheckedListBox.Designer.cs">
       <DependentUpon>F_CheckedListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_ComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ComboBox.Designer.cs">
+      <DependentUpon>F_ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DateTimePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DateTimePicker.Designer.cs">
+      <DependentUpon>F_DateTimePicker.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_filhoCheckBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="F_filhoCheckBox.Designer.cs">
       <DependentUpon>F_filhoCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_linkLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_linkLabel.Designer.cs">
+      <DependentUpon>F_linkLabel.cs</DependentUpon>
     </Compile>
     <Compile Include="F_Veiculos.cs">
       <SubType>Form</SubType>
@@ -87,8 +105,17 @@
     <EmbeddedResource Include="F_CheckedListBox.resx">
       <DependentUpon>F_CheckedListBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_ComboBox.resx">
+      <DependentUpon>F_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DateTimePicker.resx">
+      <DependentUpon>F_DateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_filhoCheckBox.resx">
       <DependentUpon>F_filhoCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_linkLabel.resx">
+      <DependentUpon>F_linkLabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Veiculos.resx">
       <DependentUpon>F_Veiculos.cs</DependentUpon>
