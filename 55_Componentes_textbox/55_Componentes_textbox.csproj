@@ -88,6 +88,18 @@
     <Compile Include="F_linkLabel.Designer.cs">
       <DependentUpon>F_linkLabel.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_ListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ListBox.Designer.cs">
+      <DependentUpon>F_ListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ListView.Designer.cs">
+      <DependentUpon>F_ListView.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_linkLabel.resx">
       <DependentUpon>F_linkLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ListBox.resx">
+      <DependentUpon>F_ListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ListView.resx">
+      <DependentUpon>F_ListView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Veiculos.resx">
       <DependentUpon>F_Veiculos.cs</DependentUpon>
