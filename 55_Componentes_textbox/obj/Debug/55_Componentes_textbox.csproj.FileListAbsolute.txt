@@ -18,3 +18,7 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textb
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_linkLabel.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_ListBox.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_ListView.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_MaskedTextBox.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_MonthCalendar.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_NumericUpDown.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_PictureBox.resources
