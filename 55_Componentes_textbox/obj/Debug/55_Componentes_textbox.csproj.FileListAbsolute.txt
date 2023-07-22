@@ -22,3 +22,5 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textb
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_MonthCalendar.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_NumericUpDown.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_PictureBox.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_ProgressBar.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_RadioButton.resources
