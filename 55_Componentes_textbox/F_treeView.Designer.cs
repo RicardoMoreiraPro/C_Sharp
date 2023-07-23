@@ -43,6 +43,7 @@
             this.btn_remover = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btn_removerSelecionados = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // treeView1
@@ -50,6 +51,7 @@
             this.treeView1.Location = new System.Drawing.Point(13, 13);
             this.treeView1.Name = "treeView1";
             treeNode7.Name = "hrv";
+            treeNode7.Tag = "http://www.youtube.com/cfbcursos";
             treeNode7.Text = "HRV";
             treeNode8.Name = "fit";
             treeNode8.Text = "Fit";
@@ -76,6 +78,7 @@
             this.btn_adicionar.TabIndex = 1;
             this.btn_adicionar.Text = "Adicionar";
             this.btn_adicionar.UseVisualStyleBackColor = true;
+            this.btn_adicionar.Click += new System.EventHandler(this.btn_adicionar_Click);
             // 
             // btn_remover
             // 
@@ -85,6 +88,7 @@
             this.btn_remover.TabIndex = 2;
             this.btn_remover.Text = "Remover";
             this.btn_remover.UseVisualStyleBackColor = true;
+            this.btn_remover.Click += new System.EventHandler(this.btn_remover_Click);
             // 
             // textBox1
             // 
@@ -102,11 +106,22 @@
             this.textBox2.Size = new System.Drawing.Size(157, 20);
             this.textBox2.TabIndex = 4;
             // 
+            // btn_removerSelecionados
+            // 
+            this.btn_removerSelecionados.Location = new System.Drawing.Point(361, 43);
+            this.btn_removerSelecionados.Name = "btn_removerSelecionados";
+            this.btn_removerSelecionados.Size = new System.Drawing.Size(157, 23);
+            this.btn_removerSelecionados.TabIndex = 5;
+            this.btn_removerSelecionados.Text = "Remover Selecionado";
+            this.btn_removerSelecionados.UseVisualStyleBackColor = true;
+            this.btn_removerSelecionados.Click += new System.EventHandler(this.btn_removerSelecionados_Click);
+            // 
             // F_treeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 450);
+            this.Controls.Add(this.btn_removerSelecionados);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_remover);
@@ -126,5 +141,6 @@
         private System.Windows.Forms.Button btn_remover;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btn_removerSelecionados;
     }
 }

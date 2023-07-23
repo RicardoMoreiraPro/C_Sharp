@@ -155,5 +155,11 @@ namespace _55_Componentes_textbox
             F_treeView f_TreeView = new F_treeView();
             f_TreeView.ShowDialog();
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            F_WebBrowser f_WebBrowser = new F_WebBrowser();
+            f_WebBrowser.ShowDialog();
+        }
     }
 }
