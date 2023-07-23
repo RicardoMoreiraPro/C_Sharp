@@ -33,3 +33,12 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textb
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_ToolStripContainer.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_BackgroundWorker.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_timer.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\EntityFramework.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\System.Data.SQLite.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\EntityFramework.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\bin\Debug\System.Data.SQLite.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\55_Componentes_textbox.csproj.CopyComplete

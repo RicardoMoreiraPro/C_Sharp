@@ -66,6 +66,8 @@
             this.tsmi_restaurar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_mensagem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_fechar = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLiteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.MenuNotificacoes.SuspendLayout();
             this.SuspendLayout();
@@ -146,7 +148,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.componentesToolStripMenuItem});
+            this.componentesToolStripMenuItem,
+            this.sQLiteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(277, 24);
@@ -372,6 +375,21 @@
             this.tsmi_fechar.Size = new System.Drawing.Size(133, 22);
             this.tsmi_fechar.Text = "Fechar";
             // 
+            // sQLiteToolStripMenuItem
+            // 
+            this.sQLiteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLiteToolStripMenuItem1});
+            this.sQLiteToolStripMenuItem.Name = "sQLiteToolStripMenuItem";
+            this.sQLiteToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.sQLiteToolStripMenuItem.Text = "SQLite";
+            // 
+            // sQLiteToolStripMenuItem1
+            // 
+            this.sQLiteToolStripMenuItem1.Name = "sQLiteToolStripMenuItem1";
+            this.sQLiteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sQLiteToolStripMenuItem1.Text = "SQLite";
+            this.sQLiteToolStripMenuItem1.Click += new System.EventHandler(this.sQLiteToolStripMenuItem1_Click);
+            // 
             // F_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,6 +456,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem backgroundWorkerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem timerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sQLiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sQLiteToolStripMenuItem1;
     }
 }
 

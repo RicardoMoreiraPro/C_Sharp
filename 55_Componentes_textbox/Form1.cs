@@ -197,5 +197,11 @@ namespace _55_Componentes_textbox
             F_timer f_Timer = new F_timer();
             f_Timer.ShowDialog();
         }
+
+        private void sQLiteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            F_SQLite f_SQLite = new F_SQLite();
+            f_SQLite.ShowDialog();
+        }
     }
 }
