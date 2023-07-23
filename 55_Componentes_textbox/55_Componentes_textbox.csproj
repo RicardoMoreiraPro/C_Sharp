@@ -136,6 +136,18 @@
     <Compile Include="F_RadioButton.Designer.cs">
       <DependentUpon>F_RadioButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_TrackBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TrackBar.Designer.cs">
+      <DependentUpon>F_TrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_treeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_treeView.Designer.cs">
+      <DependentUpon>F_treeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +200,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_RadioButton.resx">
       <DependentUpon>F_RadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TrackBar.resx">
+      <DependentUpon>F_TrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_treeView.resx">
+      <DependentUpon>F_treeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Veiculos.resx">
       <DependentUpon>F_Veiculos.cs</DependentUpon>

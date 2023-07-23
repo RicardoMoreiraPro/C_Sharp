@@ -143,5 +143,17 @@ namespace _55_Componentes_textbox
             F_RadioButton f_RadioButton = new F_RadioButton();
             f_RadioButton.ShowDialog();
         }
+
+        private void trackBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_TrackBar f_TrackBar = new F_TrackBar();
+            f_TrackBar.ShowDialog();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            F_treeView f_TreeView = new F_treeView();
+            f_TreeView.ShowDialog();
+        }
     }
 }
