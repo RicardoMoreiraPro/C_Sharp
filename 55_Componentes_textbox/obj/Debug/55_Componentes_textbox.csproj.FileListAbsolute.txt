@@ -27,3 +27,9 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textb
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_TrackBar.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_treeView.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_WebBrowser.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_SplitContainer.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_TabControl.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_TableLayoutPanel.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_ToolStripContainer.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_BackgroundWorker.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\55_Componentes_textbox\obj\Debug\_55_Componentes_textbox.F_timer.resources

@@ -161,5 +161,41 @@ namespace _55_Componentes_textbox
             F_WebBrowser f_WebBrowser = new F_WebBrowser();
             f_WebBrowser.ShowDialog();
         }
+
+        private void splitContainerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_SplitContainer f_SplitContainer = new F_SplitContainer();
+            f_SplitContainer.ShowDialog();
+        }
+
+        private void tabControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_TabControl f_TabControl = new F_TabControl();
+            f_TabControl.ShowDialog();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            F_TableLayoutPanel f_TableLayoutPanel = new F_TableLayoutPanel();
+            f_TableLayoutPanel.ShowDialog();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            F_ToolStripContainer f_ToolStripContainer = new F_ToolStripContainer();
+            f_ToolStripContainer.ShowDialog();
+        }
+
+        private void backgroundWorkerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_BackgroundWorker f_BackgroundWorker = new F_BackgroundWorker();
+            f_BackgroundWorker.ShowDialog();
+        }
+
+        private void timerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_timer f_Timer = new F_timer();
+            f_Timer.ShowDialog();
+        }
     }
 }

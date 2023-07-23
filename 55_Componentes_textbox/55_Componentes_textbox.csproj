@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_BackgroundWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_BackgroundWorker.Designer.cs">
+      <DependentUpon>F_BackgroundWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_CheckBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,36 @@
     <Compile Include="F_RadioButton.Designer.cs">
       <DependentUpon>F_RadioButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_SplitContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SplitContainer.Designer.cs">
+      <DependentUpon>F_SplitContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_TabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TabControl.Designer.cs">
+      <DependentUpon>F_TabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_TableLayoutPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TableLayoutPanel.Designer.cs">
+      <DependentUpon>F_TableLayoutPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_timer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_timer.Designer.cs">
+      <DependentUpon>F_timer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ToolStripContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ToolStripContainer.Designer.cs">
+      <DependentUpon>F_ToolStripContainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_TrackBar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +200,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_BackgroundWorker.resx">
+      <DependentUpon>F_BackgroundWorker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_CheckBox.resx">
       <DependentUpon>F_CheckBox.cs</DependentUpon>
@@ -206,6 +245,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_RadioButton.resx">
       <DependentUpon>F_RadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SplitContainer.resx">
+      <DependentUpon>F_SplitContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TabControl.resx">
+      <DependentUpon>F_TabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TableLayoutPanel.resx">
+      <DependentUpon>F_TableLayoutPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_timer.resx">
+      <DependentUpon>F_timer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ToolStripContainer.resx">
+      <DependentUpon>F_ToolStripContainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_TrackBar.resx">
       <DependentUpon>F_TrackBar.cs</DependentUpon>

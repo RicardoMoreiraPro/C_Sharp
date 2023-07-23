@@ -55,6 +55,12 @@
             this.trackBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitContainerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundWorkerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.MenuNotificacoes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmi_restaurar = new System.Windows.Forms.ToolStripMenuItem();
@@ -165,7 +171,13 @@
             this.radioButtonToolStripMenuItem,
             this.trackBarToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
+            this.toolStripMenuItem3,
+            this.splitContainerToolStripMenuItem,
+            this.tabControlToolStripMenuItem,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.backgroundWorkerToolStripMenuItem,
+            this.timerToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -282,6 +294,48 @@
             this.toolStripMenuItem3.Text = "WebBrowser";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
+            // splitContainerToolStripMenuItem
+            // 
+            this.splitContainerToolStripMenuItem.Name = "splitContainerToolStripMenuItem";
+            this.splitContainerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.splitContainerToolStripMenuItem.Text = "SplitContainer";
+            this.splitContainerToolStripMenuItem.Click += new System.EventHandler(this.splitContainerToolStripMenuItem_Click);
+            // 
+            // tabControlToolStripMenuItem
+            // 
+            this.tabControlToolStripMenuItem.Name = "tabControlToolStripMenuItem";
+            this.tabControlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tabControlToolStripMenuItem.Text = "TabControl";
+            this.tabControlToolStripMenuItem.Click += new System.EventHandler(this.tabControlToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Text = "TableLayoutPanel";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Text = "ToolStripContainer";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // backgroundWorkerToolStripMenuItem
+            // 
+            this.backgroundWorkerToolStripMenuItem.Name = "backgroundWorkerToolStripMenuItem";
+            this.backgroundWorkerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backgroundWorkerToolStripMenuItem.Text = "BackgroundWorker";
+            this.backgroundWorkerToolStripMenuItem.Click += new System.EventHandler(this.backgroundWorkerToolStripMenuItem_Click);
+            // 
+            // timerToolStripMenuItem
+            // 
+            this.timerToolStripMenuItem.Name = "timerToolStripMenuItem";
+            this.timerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.timerToolStripMenuItem.Text = "Timer";
+            this.timerToolStripMenuItem.Click += new System.EventHandler(this.timerToolStripMenuItem_Click);
+            // 
             // notifyIcon1
             // 
             this.notifyIcon1.ContextMenuStrip = this.MenuNotificacoes;
@@ -378,6 +432,12 @@
         private System.Windows.Forms.ToolStripMenuItem trackBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem splitContainerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tabControlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem backgroundWorkerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timerToolStripMenuItem;
     }
 }
 
