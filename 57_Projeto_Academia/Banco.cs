@@ -15,7 +15,7 @@ namespace _57_Projeto_Academia
 
         private static SQLiteConnection ConexaoBanco()
         {
-            conexao = new SQLiteConnection("Data Source = C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Rep.GitHub\\C#\\57_Projeto_Academia\\Banco\\banco");
+            conexao = new SQLiteConnection("Data Source=C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Rep. GitHub\\C#\\57_Projeto_Academia\\Banco\\banco_academia");
             conexao.Open();
             return conexao;
         }
@@ -27,7 +27,7 @@ namespace _57_Projeto_Academia
             {
                 using (var cmd = ConexaoBanco().CreateCommand())
                 {
-                    cmd.CommandText = "Select * from tb_usuarios";
+                    cmd.CommandText = "select * from tb_usuarios";
                     da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
                     da.Fill(dt);
                     ConexaoBanco().Close();
