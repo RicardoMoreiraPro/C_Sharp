@@ -51,6 +51,7 @@
             this.tb_userName.Name = "tb_userName";
             this.tb_userName.Size = new System.Drawing.Size(159, 20);
             this.tb_userName.TabIndex = 1;
+            this.tb_userName.Text = "brcampos";
             // 
             // label2
             // 
@@ -68,6 +69,7 @@
             this.tb_senha.PasswordChar = '*';
             this.tb_senha.Size = new System.Drawing.Size(159, 20);
             this.tb_senha.TabIndex = 3;
+            this.tb_senha.Text = "123";
             // 
             // btn_logar
             // 

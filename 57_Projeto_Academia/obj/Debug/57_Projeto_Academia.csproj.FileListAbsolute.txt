@@ -19,3 +19,4 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\57_Projeto_Academia.exe
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\57_Projeto_Academia.pdb
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_Login.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_NovoUsuario.resources
