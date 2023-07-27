@@ -79,7 +79,8 @@ namespace _57_Projeto_Academia
             {
                 if (Globais.nivel >= 1)
                 { //Procedimentos da tabela
-
+                    F_GestaoUsuarios f_GestaoUsuarios = new F_GestaoUsuarios();
+                    f_GestaoUsuarios.ShowDialog();
                 }
                 else
                 {
