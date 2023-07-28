@@ -13,12 +13,61 @@ namespace _57_Projeto_Academia
     internal class Banco
     {
         private static SQLiteConnection conexao;
-
+        //Funçoes genericas
         private static SQLiteConnection ConexaoBanco()
         {
-            conexao = new SQLiteConnection("Data Source=C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Rep. GitHub\\C#\\57_Projeto_Academia\\Banco\\banco_academia.db");
+                                                        //C:\\Users\\ricar\\OneDrive\\Ambiente de Trabalho\\Rep.GitHub\\C#\\57_Projeto_Academia\\Banco\\banco_academia.db"
+            conexao = new SQLiteConnection("Data Source=" + Globais.caminhoBanco + Globais.nomeBanco);
             conexao.Open();
             return conexao;
+        }
+        public static DataTable dql(string sql)    //dql = data query language (select)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = sql;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();    
+                return dt;
+                
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+        }
+        public static void dml(string q, string msgOk = null, string msgErro = null)   //data manipulation language(insert, delete, update
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = q;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+                if(msgOk != null)
+                {
+                    MessageBox.Show(msgOk);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                if(msgErro != null)
+                {
+                    MessageBox.Show(msgErro + "\n" + ex.Message);
+                }
+                throw ex;
+            }
         }
         public static DataTable ObterTodosUsuarios()
         {
@@ -41,27 +90,7 @@ namespace _57_Projeto_Academia
                 throw ex;
             }
         }
-        public static DataTable consulta(string sql)
-        {
-            SQLiteDataAdapter da = null;
-            DataTable dt = new DataTable();
-            try
-            {
-                var vcon = ConexaoBanco();
-                var cmd = vcon.CreateCommand();
-                cmd.CommandText = sql;
-                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
-                da.Fill(dt);
-                vcon.Close();    
-                return dt;
-                
-            }
-            catch (Exception ex)
-            {
-                
-                throw ex;
-            }
-        }
+        
         //Funções do FORM F_GestaoUsuarios
 
         public static DataTable ObterUsuariosIdNome()
@@ -106,10 +135,50 @@ namespace _57_Projeto_Academia
                 throw ex;
             }
         }
-            //FIM - Funções do FORM F_GestaoUsuarios
-            //Funçoes do FORM F_NovoUsuario
+        public static void AtualizarUsuario(Usuario u)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "UPDATE tb_usuarios SET T_NOMEUSUARIO = '"+u.nome+ "', T_USERNAME = '"+u.username+"', T_SENHAUSUARIO = '"+u.senha+"', T_STATUSUSUARIO = '"+u.status+"', N_NIVELUSUARIO = "+u.nivel+" WHERE N_IDUSUARIO = "+u.id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
 
-            public static void NovoUsuario(Usuario u)
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        public static void DeletarUsuario(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM tb_usuarios WHERE N_IDUSUARIO = " + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        //FIM - Funções do FORM F_GestaoUsuarios
+        //Funçoes do FORM F_NovoUsuario
+
+        public static void NovoUsuario(Usuario u)
         {
             if (existeUsername(u))
             {

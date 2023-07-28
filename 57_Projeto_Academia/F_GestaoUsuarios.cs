@@ -47,5 +47,38 @@ namespace _57_Projeto_Academia
             }
             
         }
+
+        private void btn_novo_Click(object sender, EventArgs e)
+        {
+            F_NovoUsuario f_NovoUsuario = new F_NovoUsuario();
+            f_NovoUsuario.ShowDialog();
+            dgv_usuarios.DataSource = Banco.ObterUsuariosIdNome();
+        }
+
+        private void btn_salvar_Click(object sender, EventArgs e)
+        {
+            int linha = dgv_usuarios.SelectedRows[0].Index;
+            Usuario u = new Usuario();
+            u.id = Convert.ToInt32(tb_id.Text);
+            u.nome = tb_nome.Text;
+            u.username = tb_username.Text;
+            u.senha = tb_senha.Text;
+            u.status = cb_status.Text;
+            u.nivel = Convert.ToInt32(Math.Round(n_nivel.Value, 0));
+            Banco.AtualizarUsuario(u);
+            //dgv_usuarios.DataSource = Banco.ObterUsuariosIdNome();
+            //dgv_usuarios.CurrentCell = dgv_usuarios[0, linha];
+            dgv_usuarios[1, linha].Value = tb_nome.Text;
+        }
+
+        private void Btn_excluir_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Confirma a exclusão?","Excluir?", MessageBoxButtons.YesNo);
+            if(res == DialogResult.Yes)
+            {
+                Banco.DeletarUsuario(tb_id.Text);
+                dgv_usuarios.Rows.Remove(dgv_usuarios.CurrentRow);
+            }
+        }
     }
 }

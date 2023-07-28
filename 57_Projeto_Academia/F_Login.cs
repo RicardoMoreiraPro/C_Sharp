@@ -31,7 +31,7 @@ namespace _57_Projeto_Academia
                 return;
             }
             string sql = "select * from tb_usuarios where t_username ='" + username + "'and t_senhausuario='" + senha + "'";
-            dt = Banco.consulta(sql);
+            dt = Banco.dql(sql);
             if(dt.Rows.Count == 1)
             {
                 form1.lb_acesso.Text = dt.Rows[0].ItemArray[5].ToString();
