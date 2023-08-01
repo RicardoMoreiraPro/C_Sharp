@@ -23,3 +23,4 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_GestaoUsuarios.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_Horarios.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_Gestao_De_Professores.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_GestaoDeTurmas.resources

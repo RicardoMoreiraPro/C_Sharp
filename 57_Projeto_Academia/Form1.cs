@@ -86,5 +86,11 @@ namespace _57_Projeto_Academia
             F_Gestao_De_Professores f_Gestao_De_Professores = new F_Gestao_De_Professores();
             abreForm(2, f_Gestao_De_Professores);
         }
+
+        private void turmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_GestaoDeTurmas f_GestaoDeTurmas = new F_GestaoDeTurmas();
+            abreForm(2, f_GestaoDeTurmas);
+        }
     }
 }
