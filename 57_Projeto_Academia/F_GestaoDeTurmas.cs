@@ -16,6 +16,8 @@ namespace _57_Projeto_Academia
     public partial class F_GestaoDeTurmas : Form
     {
         string idSelecionado;
+        int modo = 0;    //0 = Padrão   1 = Edição   2 = Inserção
+        string vquery;
         public F_GestaoDeTurmas()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace _57_Projeto_Academia
 
         private void F_GestaoDeTurmas_Load(object sender, EventArgs e)
         {
-            string vquery = @"select
+            vquery = @"select
                     t.N_IDTURMA as 'ID Turma',
                     t.T_DSCTURMA as 'Turma',
                     p.T_NOMEPROFESSOR as 'Professor',
@@ -73,6 +75,7 @@ namespace _57_Projeto_Academia
             int contLinhas = dgv.SelectedRows.Count;
             if (contLinhas > 0)
             {
+                modo = 0;
                 idSelecionado = dgv_turmas.Rows[dgv_turmas.SelectedRows[0].Index].Cells[0].Value.ToString();
                 string vqueryCampos = @"select T_DSCTURMA, N_IDPROFESSOR, N_IDHORARIO, N_MAXALUNOS, T_STATUS from tb_turmas where N_IDTURMA=" + idSelecionado;
                 DataTable dt = new DataTable();
@@ -82,7 +85,17 @@ namespace _57_Projeto_Academia
                 nud_maximoAlunos.Value = dt.Rows[0].Field<Int64>("N_MAXALUNOS");
                 cb_status.SelectedValue = dt.Rows[0].Field<string>("T_STATUS");
                 cb_horario.SelectedValue = dt.Rows[0].Field<Int64>("N_IDHORARIO").ToString();
+                tb_vagas.Text = calcVagas();
             }
+        }
+        private string calcVagas()
+        {
+            //Calculo de vagas
+            string queryVagas = String.Format(@" select count(N_IDALUNO) as 'contVagas' from tb_alunos where T_STATUS = 'A' and N_IDTURMA = {0}", idSelecionado);
+            DataTable dt = Banco.dql(queryVagas);
+            int vagas = Int32.Parse(Math.Round(nud_maximoAlunos.Value, 0).ToString());
+            vagas -= Int32.Parse(dt.Rows[0].Field<Int64>("contVagas").ToString());
+            return vagas.ToString();
         }
 
         private void btn_novaTurma_Click(object sender, EventArgs e)
@@ -92,24 +105,46 @@ namespace _57_Projeto_Academia
             nud_maximoAlunos.Value = 0;
             cb_status.SelectedIndex = -1;
             cb_horario.SelectedIndex = -1;
-
+            tb_dscTurma.Focus();
+            modo = 2;
         }
-
+        
         private void btn_salvar_Click(object sender, EventArgs e)
         {
-            int linha = dgv_turmas.SelectedRows[0].Index;
-            string queryAtualizarTurma = String.Format(@"
-                update tb_turmas set T_DSCTURMA = '{0}', N_IDPROFESSOR = {1},
-                    N_IDHORARIO = {2}, N_MAXALUNOS = {3}, T_STATUS = '{4}'
-                    where N_IDTURMA= {5}", tb_dscTurma.Text, cb_professor.SelectedValue,
-                    cb_horario.SelectedValue, Int32.Parse(Math.Round(nud_maximoAlunos.Value, 0).ToString()), cb_status.SelectedValue, idSelecionado);
-            Banco.dml(queryAtualizarTurma);
-            dgv_turmas[1, linha].Value = tb_dscTurma.Text;
-            dgv_turmas[2, linha].Value = cb_professor.Text;
-            dgv_turmas[3, linha].Value = cb_horario.Text;
-            dgv_turmas[4, linha].Value = nud_maximoAlunos.Value;
-            dgv_turmas[5, linha].Value = cb_status.Text;
-            MessageBox.Show("Dados gravados");
+            
+            if (modo != 0)
+            {
+                string queryTurma = "";
+                string msg = "";
+                int linha = dgv_turmas.SelectedRows[0].Index;
+                if (modo == 1)
+                {
+                    msg = "Dados alterados";
+                    queryTurma = String.Format(@" update tb_turmas set T_DSCTURMA = '{0}', N_IDPROFESSOR = {1}, N_IDHORARIO = {2}, N_MAXALUNOS = {3}, T_STATUS = '{4}' where N_IDTURMA= {5}", tb_dscTurma.Text, cb_professor.SelectedValue, cb_horario.SelectedValue, Int32.Parse(Math.Round(nud_maximoAlunos.Value, 0).ToString()), cb_status.SelectedValue, idSelecionado);
+                    tb_vagas.Text = calcVagas();
+                }
+                else
+                {
+                    msg = ("Nova turma inserida");
+                    queryTurma = String.Format(@" insert into tb_turmas (T_DSCTURMA, N_IDPROFESSOR, N_IDHORARIO, N_MAXALUNOS, T_STATUS) values ('{0}',{1},{2},{3},'{4}')", tb_dscTurma.Text, cb_professor.SelectedValue, cb_horario.SelectedValue, Int32.Parse(Math.Round(nud_maximoAlunos.Value, 0).ToString()), cb_status.SelectedValue);
+                    
+                }
+                
+                Banco.dml(queryTurma);
+                if (modo == 1)
+                {
+                    dgv_turmas[1, linha].Value = tb_dscTurma.Text;
+                    dgv_turmas[2, linha].Value = cb_professor.Text;
+                    dgv_turmas[3, linha].Value = cb_horario.Text;
+                    dgv_turmas[4, linha].Value = nud_maximoAlunos.Value;
+                    dgv_turmas[5, linha].Value = cb_status.Text;
+                }
+                else
+                {
+                    dgv_turmas.DataSource = Banco.dql(vquery);
+                }
+                    MessageBox.Show(msg);
+            }
         }
 
         private void btn_excluir_Click(object sender, EventArgs e)
@@ -127,6 +162,46 @@ namespace _57_Projeto_Academia
         private void btn_fechar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void tb_dscTurma_TextChanged(object sender, EventArgs e)
+        {
+            if (modo == 0) 
+            {
+                modo = 1;
+            }
+        }
+
+        private void cb_professor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (modo == 0)
+            {
+                modo = 1;
+            }
+        }
+
+        private void nud_maximoAlunos_ValueChanged(object sender, EventArgs e)
+        {
+            if (modo == 0)
+            {
+                modo = 1;
+            }
+        }
+
+        private void cb_status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (modo == 0)
+            {
+                modo = 1;
+            }
+        }
+
+        private void cb_horario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (modo == 0)
+            {
+                modo = 1;
+            }
         }
     }
 }

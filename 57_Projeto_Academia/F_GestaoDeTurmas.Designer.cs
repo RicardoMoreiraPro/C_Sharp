@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_novaTurma = new System.Windows.Forms.Button();
-            this.btn_salvar = new System.Windows.Forms.Button();
-            this.btn_excluir = new System.Windows.Forms.Button();
-            this.btn_imprimir = new System.Windows.Forms.Button();
             this.btn_fechar = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
+            this.btn_excluir = new System.Windows.Forms.Button();
+            this.btn_salvar = new System.Windows.Forms.Button();
+            this.btn_novaTurma = new System.Windows.Forms.Button();
             this.dgv_turmas = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tb_dscTurma = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_vagas = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_turmas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_maximoAlunos)).BeginInit();
@@ -66,25 +66,24 @@
             this.panel1.Size = new System.Drawing.Size(689, 33);
             this.panel1.TabIndex = 0;
             // 
-            // btn_novaTurma
+            // btn_fechar
             // 
-            this.btn_novaTurma.Location = new System.Drawing.Point(4, 4);
-            this.btn_novaTurma.Name = "btn_novaTurma";
-            this.btn_novaTurma.Size = new System.Drawing.Size(131, 23);
-            this.btn_novaTurma.TabIndex = 0;
-            this.btn_novaTurma.Text = "Nova Turma";
-            this.btn_novaTurma.UseVisualStyleBackColor = true;
-            this.btn_novaTurma.Click += new System.EventHandler(this.btn_novaTurma_Click);
+            this.btn_fechar.Location = new System.Drawing.Point(552, 4);
+            this.btn_fechar.Name = "btn_fechar";
+            this.btn_fechar.Size = new System.Drawing.Size(131, 23);
+            this.btn_fechar.TabIndex = 4;
+            this.btn_fechar.Text = "Fechar";
+            this.btn_fechar.UseVisualStyleBackColor = true;
+            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
-            // btn_salvar
+            // btn_imprimir
             // 
-            this.btn_salvar.Location = new System.Drawing.Point(141, 4);
-            this.btn_salvar.Name = "btn_salvar";
-            this.btn_salvar.Size = new System.Drawing.Size(131, 23);
-            this.btn_salvar.TabIndex = 1;
-            this.btn_salvar.Text = "Salvar Edições";
-            this.btn_salvar.UseVisualStyleBackColor = true;
-            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
+            this.btn_imprimir.Location = new System.Drawing.Point(415, 4);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(131, 23);
+            this.btn_imprimir.TabIndex = 3;
+            this.btn_imprimir.Text = "Imprimir Turma";
+            this.btn_imprimir.UseVisualStyleBackColor = true;
             // 
             // btn_excluir
             // 
@@ -96,37 +95,38 @@
             this.btn_excluir.UseVisualStyleBackColor = true;
             this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
-            // btn_imprimir
+            // btn_salvar
             // 
-            this.btn_imprimir.Location = new System.Drawing.Point(415, 4);
-            this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(131, 23);
-            this.btn_imprimir.TabIndex = 3;
-            this.btn_imprimir.Text = "Imprimir Turma";
-            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_salvar.Location = new System.Drawing.Point(141, 4);
+            this.btn_salvar.Name = "btn_salvar";
+            this.btn_salvar.Size = new System.Drawing.Size(131, 23);
+            this.btn_salvar.TabIndex = 1;
+            this.btn_salvar.Text = "Salvar Edições";
+            this.btn_salvar.UseVisualStyleBackColor = true;
+            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
             // 
-            // btn_fechar
+            // btn_novaTurma
             // 
-            this.btn_fechar.Location = new System.Drawing.Point(552, 4);
-            this.btn_fechar.Name = "btn_fechar";
-            this.btn_fechar.Size = new System.Drawing.Size(131, 23);
-            this.btn_fechar.TabIndex = 4;
-            this.btn_fechar.Text = "Fechar";
-            this.btn_fechar.UseVisualStyleBackColor = true;
-            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
+            this.btn_novaTurma.Location = new System.Drawing.Point(4, 4);
+            this.btn_novaTurma.Name = "btn_novaTurma";
+            this.btn_novaTurma.Size = new System.Drawing.Size(131, 23);
+            this.btn_novaTurma.TabIndex = 0;
+            this.btn_novaTurma.Text = "Nova Turma";
+            this.btn_novaTurma.UseVisualStyleBackColor = true;
+            this.btn_novaTurma.Click += new System.EventHandler(this.btn_novaTurma_Click);
             // 
             // dgv_turmas
             // 
             this.dgv_turmas.AllowUserToAddRows = false;
             this.dgv_turmas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_turmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_turmas.EnableHeadersVisualStyles = false;
             this.dgv_turmas.Location = new System.Drawing.Point(4, 13);
@@ -172,6 +172,7 @@
             this.nud_maximoAlunos.Name = "nud_maximoAlunos";
             this.nud_maximoAlunos.Size = new System.Drawing.Size(113, 20);
             this.nud_maximoAlunos.TabIndex = 3;
+            this.nud_maximoAlunos.ValueChanged += new System.EventHandler(this.nud_maximoAlunos_ValueChanged);
             // 
             // cb_professor
             // 
@@ -180,6 +181,7 @@
             this.cb_professor.Name = "cb_professor";
             this.cb_professor.Size = new System.Drawing.Size(215, 21);
             this.cb_professor.TabIndex = 2;
+            this.cb_professor.SelectedIndexChanged += new System.EventHandler(this.cb_professor_SelectedIndexChanged);
             // 
             // cb_status
             // 
@@ -188,6 +190,7 @@
             this.cb_status.Name = "cb_status";
             this.cb_status.Size = new System.Drawing.Size(96, 21);
             this.cb_status.TabIndex = 4;
+            this.cb_status.SelectedIndexChanged += new System.EventHandler(this.cb_status_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -205,6 +208,7 @@
             this.cb_horario.Name = "cb_horario";
             this.cb_horario.Size = new System.Drawing.Size(218, 21);
             this.cb_horario.TabIndex = 5;
+            this.cb_horario.SelectedIndexChanged += new System.EventHandler(this.cb_horario_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -221,6 +225,7 @@
             this.tb_dscTurma.Name = "tb_dscTurma";
             this.tb_dscTurma.Size = new System.Drawing.Size(215, 20);
             this.tb_dscTurma.TabIndex = 1;
+            this.tb_dscTurma.TextChanged += new System.EventHandler(this.tb_dscTurma_TextChanged);
             // 
             // label6
             // 
@@ -231,19 +236,22 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Vagas Disponiveis";
             // 
-            // textBox1
+            // tb_vagas
             // 
-            this.textBox1.Location = new System.Drawing.Point(462, 266);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
+            this.tb_vagas.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tb_vagas.Location = new System.Drawing.Point(462, 266);
+            this.tb_vagas.Name = "tb_vagas";
+            this.tb_vagas.ReadOnly = true;
+            this.tb_vagas.Size = new System.Drawing.Size(100, 20);
+            this.tb_vagas.TabIndex = 13;
+            this.tb_vagas.TabStop = false;
             // 
             // F_GestaoDeTurmas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_vagas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_dscTurma);
             this.Controls.Add(this.label5);
@@ -292,6 +300,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_dscTurma;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_vagas;
     }
 }
