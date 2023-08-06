@@ -1,9 +1,13 @@
-﻿using System;
+﻿using iTextSharp;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Infrastructure;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -201,6 +205,98 @@ namespace _57_Projeto_Academia
             if (modo == 0)
             {
                 modo = 1;
+            }
+        }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+            string nomeArquivo = Globais.caminho + @"\turmas.pdf";
+            FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+            Document doc = new Document(PageSize.A4);
+            PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+
+            iTextSharp.text.Image logo = iTextSharp.text.Image.GetInstance(Globais.caminho + @"\arvore.jpg");
+            logo.ScaleToFit(140f, 120f);
+            logo.Alignment = Element.ALIGN_CENTER;
+            //logo.SetAbsolutePosition(100f, 500f);  //X, -Y
+            
+            string dados = "";
+            Paragraph paragrafo1 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 20, (int)System.Drawing.FontStyle.Bold));
+            paragrafo1.Alignment = Element.ALIGN_LEFT;
+            paragrafo1.Add("PDF RICARDO MOREIRA\n");
+            paragrafo1.Font = new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Italic);
+            paragrafo1.Add("RICARDO MOREIRA\n");
+            string texto = "youtube.com/cfbcursos";
+            paragrafo1.Add(texto + "\n");
+
+            Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Bold));
+            paragrafo2.Alignment = Element.ALIGN_LEFT;
+            texto = "Este é o texto do segundo paragrafo";
+            paragrafo2.Add(texto + "\n\n\n");
+
+            
+            PdfPTable tabela = new PdfPTable(3); //3 colunas
+            tabela.DefaultCell.FixedHeight = 20;
+
+            PdfPCell celula1 = new PdfPCell();
+            celula1.Colspan = 3; //Linha 1 mesclada
+            //celula.Rotation = 90;
+            celula1.AddElement(logo);
+            tabela.AddCell(celula1);
+
+            tabela.AddCell("Código");
+            tabela.AddCell("Produto");
+            tabela.AddCell("Preço");
+
+            tabela.AddCell("01");
+            tabela.AddCell("Mouse");
+            tabela.AddCell("25,00");
+
+            tabela.AddCell("02");
+            tabela.AddCell("Teclado");
+            tabela.AddCell("65,00");
+
+            PdfPCell celula2 = new PdfPCell(new Phrase("Tabela de preços"));
+            celula2.Rotation = 0;
+            celula2.Colspan = 3; ////Linha 1 mesclada
+            celula2.FixedHeight = 40;
+            celula2.HorizontalAlignment = Element.ALIGN_CENTER;
+            celula2.VerticalAlignment = Element.ALIGN_MIDDLE;
+            tabela.AddCell(celula2);
+
+            Paragraph paragrafo3 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 20, (int)System.Drawing.FontStyle.Bold));
+            paragrafo3.Alignment = Element.ALIGN_CENTER;
+            texto = "Relatório de Turmas";
+            paragrafo3.Add(texto + "\n\n");
+
+            PdfPTable tabela2 = new PdfPTable(3); //3 colunas
+            tabela2.DefaultCell.FixedHeight = 20;
+
+            tabela2.AddCell("ID Turma");
+            tabela2.AddCell("Turma");
+            tabela2.AddCell("Horário");
+
+            DataTable dtTurmas = Banco.dql(vquery);
+            for (int i = 0; i < dtTurmas.Rows.Count; i++)
+            {
+                tabela2.AddCell(dtTurmas.Rows[i].Field<Int64>("ID Turma").ToString());
+                tabela2.AddCell(dtTurmas.Rows[i].Field<string>("Turma"));
+                tabela2.AddCell(dtTurmas.Rows[i].Field<string>("Horario"));
+            }
+
+            doc.Open();
+            doc.Add(logo);
+            doc.Add(paragrafo1);
+            doc.Add(paragrafo2);
+            doc.Add(tabela);
+            doc.Add(paragrafo3);
+            doc.Add(tabela2);
+            doc.Close();
+
+            DialogResult res = MessageBox.Show("Deseja abrir o Relatório?", "Relatório", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start(Globais.caminho + @"\turmas.pdf");
             }
         }
     }

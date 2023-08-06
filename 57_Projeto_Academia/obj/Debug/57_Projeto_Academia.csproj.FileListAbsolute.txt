@@ -24,3 +24,9 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_Horarios.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_Gestao_De_Professores.resources
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_GestaoDeTurmas.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\bin\Debug\itextsharp.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\bin\Debug\itextsharp.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_NovoAluno.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_SelecionarTurma.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\C#\57_Projeto_Academia\obj\Debug\_57_Projeto_Academia.F_GestaoAlunos.resources

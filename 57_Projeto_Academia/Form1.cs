@@ -72,7 +72,8 @@ namespace _57_Projeto_Academia
 
         private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //abreForm(1, f_GestaoUsuarios);
+            F_NovoAluno f_NovoAluno = new F_NovoAluno();
+            abreForm(1, f_NovoAluno);
         }
 
         private void horáriosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,6 +92,12 @@ namespace _57_Projeto_Academia
         {
             F_GestaoDeTurmas f_GestaoDeTurmas = new F_GestaoDeTurmas();
             abreForm(2, f_GestaoDeTurmas);
+        }
+
+        private void gestãoDeAlunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_GestaoAlunos f_GestaoAlunos = new F_GestaoAlunos();
+            abreForm(1, f_GestaoAlunos);
         }
     }
 }
