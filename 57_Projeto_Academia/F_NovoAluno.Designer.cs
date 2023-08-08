@@ -37,15 +37,19 @@
             this.mtb_telefone = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_novo = new System.Windows.Forms.Button();
-            this.btn_gravar = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_fechar = new System.Windows.Forms.Button();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_gravar = new System.Windows.Forms.Button();
+            this.btn_novo = new System.Windows.Forms.Button();
             this.tb_turma = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btn_selTurma = new System.Windows.Forms.Button();
             this.btn_selPlano = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pb_foto = new System.Windows.Forms.PictureBox();
+            this.btn_addfoto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,29 +132,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 192);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(411, 33);
+            this.panel1.Size = new System.Drawing.Size(530, 33);
             this.panel1.TabIndex = 8;
             // 
-            // btn_novo
+            // btn_fechar
             // 
-            this.btn_novo.Location = new System.Drawing.Point(19, 4);
-            this.btn_novo.Name = "btn_novo";
-            this.btn_novo.Size = new System.Drawing.Size(89, 23);
-            this.btn_novo.TabIndex = 0;
-            this.btn_novo.Text = "Novo";
-            this.btn_novo.UseVisualStyleBackColor = true;
-            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
-            // 
-            // btn_gravar
-            // 
-            this.btn_gravar.Enabled = false;
-            this.btn_gravar.Location = new System.Drawing.Point(114, 4);
-            this.btn_gravar.Name = "btn_gravar";
-            this.btn_gravar.Size = new System.Drawing.Size(89, 23);
-            this.btn_gravar.TabIndex = 1;
-            this.btn_gravar.Text = "Gravar";
-            this.btn_gravar.UseVisualStyleBackColor = true;
-            this.btn_gravar.Click += new System.EventHandler(this.btn_gravar_Click);
+            this.btn_fechar.Location = new System.Drawing.Point(308, 3);
+            this.btn_fechar.Name = "btn_fechar";
+            this.btn_fechar.Size = new System.Drawing.Size(89, 23);
+            this.btn_fechar.TabIndex = 3;
+            this.btn_fechar.Text = "Fechar";
+            this.btn_fechar.UseVisualStyleBackColor = true;
+            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
             // btn_cancelar
             // 
@@ -163,15 +156,26 @@
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // btn_fechar
+            // btn_gravar
             // 
-            this.btn_fechar.Location = new System.Drawing.Point(308, 3);
-            this.btn_fechar.Name = "btn_fechar";
-            this.btn_fechar.Size = new System.Drawing.Size(89, 23);
-            this.btn_fechar.TabIndex = 3;
-            this.btn_fechar.Text = "Fechar";
-            this.btn_fechar.UseVisualStyleBackColor = true;
-            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
+            this.btn_gravar.Enabled = false;
+            this.btn_gravar.Location = new System.Drawing.Point(114, 4);
+            this.btn_gravar.Name = "btn_gravar";
+            this.btn_gravar.Size = new System.Drawing.Size(89, 23);
+            this.btn_gravar.TabIndex = 1;
+            this.btn_gravar.Text = "Gravar";
+            this.btn_gravar.UseVisualStyleBackColor = true;
+            this.btn_gravar.Click += new System.EventHandler(this.btn_gravar_Click);
+            // 
+            // btn_novo
+            // 
+            this.btn_novo.Location = new System.Drawing.Point(19, 4);
+            this.btn_novo.Name = "btn_novo";
+            this.btn_novo.Size = new System.Drawing.Size(89, 23);
+            this.btn_novo.TabIndex = 0;
+            this.btn_novo.Text = "Novo";
+            this.btn_novo.UseVisualStyleBackColor = true;
+            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
             // 
             // tb_turma
             // 
@@ -208,11 +212,38 @@
             this.btn_selPlano.Text = "...";
             this.btn_selPlano.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "JPEG(*.jpeg)|*.jpeg|JPG(*.jpg)|*.jpg";
+            // 
+            // pb_foto
+            // 
+            this.pb_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_foto.Location = new System.Drawing.Point(426, 42);
+            this.pb_foto.Name = "pb_foto";
+            this.pb_foto.Size = new System.Drawing.Size(85, 113);
+            this.pb_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_foto.TabIndex = 13;
+            this.pb_foto.TabStop = false;
+            // 
+            // btn_addfoto
+            // 
+            this.btn_addfoto.Location = new System.Drawing.Point(426, 13);
+            this.btn_addfoto.Name = "btn_addfoto";
+            this.btn_addfoto.Size = new System.Drawing.Size(85, 23);
+            this.btn_addfoto.TabIndex = 14;
+            this.btn_addfoto.Text = "Add Foto";
+            this.btn_addfoto.UseVisualStyleBackColor = true;
+            this.btn_addfoto.Click += new System.EventHandler(this.btn_addfoto_Click);
+            // 
             // F_NovoAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 225);
+            this.ClientSize = new System.Drawing.Size(530, 225);
+            this.Controls.Add(this.btn_addfoto);
+            this.Controls.Add(this.pb_foto);
             this.Controls.Add(this.btn_selPlano);
             this.Controls.Add(this.btn_selTurma);
             this.Controls.Add(this.textBox2);
@@ -232,6 +263,7 @@
             this.Text = "Novo Aluno";
             this.Load += new System.EventHandler(this.F_NovoAluno_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +288,8 @@
         private System.Windows.Forms.Button btn_selTurma;
         private System.Windows.Forms.Button btn_selPlano;
         public System.Windows.Forms.TextBox tb_turma;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.PictureBox pb_foto;
+        private System.Windows.Forms.Button btn_addfoto;
     }
 }

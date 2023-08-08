@@ -14,6 +14,7 @@ namespace _57_Projeto_Academia
         public static string caminho = System.Environment.CurrentDirectory;
         public static string nomeBanco = "banco_academia.db";
         public static string caminhoBanco = caminho + @"\Banco\";
+        public static string caminhoFotos = caminho + @"\foto\";
 
         /*
          tb_usuarios N_IDUSUARIO   T_NOMEUSUARIO  T_USERNAME  T_SENHAUSUARIO  T_STATUSUSUARIO  N_NIVELUSUARIO
